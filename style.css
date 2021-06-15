@@ -1,0 +1,224 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(banner.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: deepskyblue;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transform: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 7%;
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 40px;
+}
+.content p{
+  line-height: 25px;
+  margin: 20px auto;
+  font-weight: 100;
+  font-size: 25px;
+}
+.button button{
+  width: 200px;
+  margin: 20px 10px;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: bold;
+  border: 2px solid deepskyblue;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.button span{
+  background: deepskyblue;
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  border-radius: 25px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.button button:hover span{
+  width: 100;
+}
+.button button:hover{
+  border: none;
+}
+.half-width{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+.half-width p{
+  text-align: justify;
+}
+.half-width img{
+  width: 100%;
+}
+span{
+  color: orange;
+}
+.top-banner{
+  margin-top: 50px;
+  background-image: url('top-banner.png');
+  background-repeat: no-repeat;
+}
+section{
+  height: 500px;
+}
+.link-button{
+  color: white;
+  background-color: orangered;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+a:hover{
+  background-color: blue;
+}
+
+.middle-section{
+  background-image: url("dream-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.single-experience{
+  box-shadow: 15px 15px 40px gray;
+  border-radius: 10px;
+  height: 80%;
+}
+
+.experience-area{
+  background-image: url("exp-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+#full-stack{
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, lightcoral, tomato);
+  border-image-slice: 1;
+}
+#half-stack{
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+
+.footer-section{
+  background-color: black;
+  height: 300px;
+  
+}
+footer p{
+  text-align: center;
+  color: white;
+}
+.icon{
+  float: left;
+  width: 50%;
+}
+.location-icon{
+  color: white;
+  padding-top: 50px;
+  margin-left: 50px;
+}
+.location-icon i{
+  font-size: 35px;
+}
+.location-icon p{
+  text-align: left;
+  display: inline;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+.phone-icon{
+  color: white;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+.phone-icon i{
+  font-size: 35px;
+}
+.phone-icon p{
+   text-align: left;
+   display: inline;
+   padding-top: 20px;
+   padding-left: 50px;
+   font-size: 20px;
+}
+.gmail-icon{
+  color: white;
+  margin-left: 50px;
+  padding-top: 30px;
+}
+.gmail-icon i{
+  font-size: 35px;
+}
+.gmail-icon p{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 50px;
+  font-size: 20px;
+  display: inline;
+}
+.about-section{
+  margin-left: 50%;
+  padding-left: 2%;
+  color: white;
+  padding-top: 30px;
+}
+.about-section p{
+  text-align: justify;
+}
